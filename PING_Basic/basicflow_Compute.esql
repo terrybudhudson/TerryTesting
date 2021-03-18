@@ -7,7 +7,7 @@ CREATE COMPUTE MODULE basicflow_Compute
 		DECLARE TEST CHAR;
 		--CALL CopyMessageHeaders();
 		--CALL CopyEntireMessage();
-		-- Set OutputRoot = InputRoot; THis is a change
+		-- Set OutputRoot = InputRoot; THis is another change 
 		Set OutputRoot.JSON.Data.DBResp.RowsRetrieved = 0;
 		Set OutputRoot.JSON.Data.DBResp.RowsAdded = 0;
 		Set OutputRoot.JSON.Data.DBResp.RowsUpdated = 0;
