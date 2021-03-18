@@ -1,0 +1,376 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "DBResp": {
+                "UserReturnCode": 0,
+                "RowsRetrieved": 0,
+                "RowsAdded": 0,
+                "RowsUpdated": 0,
+                "RowsDeleted": 0,
+                "SQLCODE_Errorcode": 0,
+                "SQLSTATE_SQLState": "string",
+                "SQL_Error_Message": "string"
+            },
+            "Employee": [
+                {
+                    "EMPNO": "string",
+                    "FIRSTNME": "string",
+                    "MIDINIT": "string",
+                    "LASTNAME": "string",
+                    "WORKDEPT": "string",
+                    "PHONENO": "string",
+                    "HIREDATE": "string",
+                    "JOB": "string",
+                    "EDLEVEL": 0,
+                    "SEX": "string",
+                    "BIRTHDATE": "string",
+                    "SALARY": 0,
+                    "BONUS": 0,
+                    "COMM": 0
+                }
+            ]
+        }
+    ],
+    "required": [
+        "DBResp",
+        "Employee"
+    ],
+    "properties": {
+        "DBResp": {
+            "id": "#/properties/DBResp",
+            "type": "object",
+            "title": "The DBResp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "UserReturnCode": 0,
+                    "RowsRetrieved": 0,
+                    "RowsAdded": 0,
+                    "RowsUpdated": 0,
+                    "RowsDeleted": 0,
+                    "SQLCODE_Errorcode": 0,
+                    "SQLSTATE_SQLState": "string",
+                    "SQL_Error_Message": "string"
+                }
+            ],
+            "required": [
+                "UserReturnCode",
+                "RowsRetrieved",
+                "RowsAdded",
+                "RowsUpdated",
+                "RowsDeleted",
+                "SQLCODE_Errorcode",
+                "SQLSTATE_SQLState",
+                "SQL_Error_Message"
+            ],
+            "properties": {
+                "UserReturnCode": {
+                    "id": "#/properties/DBResp/properties/UserReturnCode",
+                    "type": "integer",
+                    "title": "The UserReturnCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "RowsRetrieved": {
+                    "id": "#/properties/DBResp/properties/RowsRetrieved",
+                    "type": "integer",
+                    "title": "The RowsRetrieved schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "RowsAdded": {
+                    "id": "#/properties/DBResp/properties/RowsAdded",
+                    "type": "integer",
+                    "title": "The RowsAdded schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "RowsUpdated": {
+                    "id": "#/properties/DBResp/properties/RowsUpdated",
+                    "type": "integer",
+                    "title": "The RowsUpdated schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "RowsDeleted": {
+                    "id": "#/properties/DBResp/properties/RowsDeleted",
+                    "type": "integer",
+                    "title": "The RowsDeleted schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "SQLCODE_Errorcode": {
+                    "id": "#/properties/DBResp/properties/SQLCODE_Errorcode",
+                    "type": "integer",
+                    "title": "The SQLCODE_Errorcode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "SQLSTATE_SQLState": {
+                    "id": "#/properties/DBResp/properties/SQLSTATE_SQLState",
+                    "type": "string",
+                    "title": "The SQLSTATE_SQLState schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "string"
+                    ]
+                },
+                "SQL_Error_Message": {
+                    "id": "#/properties/DBResp/properties/SQL_Error_Message",
+                    "type": "string",
+                    "title": "The SQL_Error_Message schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "string"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "Employee": {
+            "id": "#/properties/Employee",
+            "type": "array",
+            "title": "The Employee schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "EMPNO": "string",
+                        "FIRSTNME": "string",
+                        "MIDINIT": "string",
+                        "LASTNAME": "string",
+                        "WORKDEPT": "string",
+                        "PHONENO": "string",
+                        "HIREDATE": "string",
+                        "JOB": "string",
+                        "EDLEVEL": 0,
+                        "SEX": "string",
+                        "BIRTHDATE": "string",
+                        "SALARY": 0,
+                        "BONUS": 0,
+                        "COMM": 0
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "id": "#/properties/Employee/items",
+                "anyOf": [
+                    {
+                        "id": "#/properties/Employee/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "EMPNO": "string",
+                                "FIRSTNME": "string",
+                                "MIDINIT": "string",
+                                "LASTNAME": "string",
+                                "WORKDEPT": "string",
+                                "PHONENO": "string",
+                                "HIREDATE": "string",
+                                "JOB": "string",
+                                "EDLEVEL": 0,
+                                "SEX": "string",
+                                "BIRTHDATE": "string",
+                                "SALARY": 0,
+                                "BONUS": 0,
+                                "COMM": 0
+                            }
+                        ],
+                        "required": [
+                            "EMPNO",
+                            "FIRSTNME",
+                            "MIDINIT",
+                            "LASTNAME",
+                            "WORKDEPT",
+                            "PHONENO",
+                            "HIREDATE",
+                            "JOB",
+                            "EDLEVEL",
+                            "SEX",
+                            "BIRTHDATE",
+                            "SALARY",
+                            "BONUS",
+                            "COMM"
+                        ],
+                        "properties": {
+                            "EMPNO": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/EMPNO",
+                                "type": "string",
+                                "title": "The EMPNO schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "FIRSTNME": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/FIRSTNME",
+                                "type": "string",
+                                "title": "The FIRSTNME schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "MIDINIT": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/MIDINIT",
+                                "type": "string",
+                                "title": "The MIDINIT schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "LASTNAME": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/LASTNAME",
+                                "type": "string",
+                                "title": "The LASTNAME schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "WORKDEPT": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/WORKDEPT",
+                                "type": "string",
+                                "title": "The WORKDEPT schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "PHONENO": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/PHONENO",
+                                "type": "string",
+                                "title": "The PHONENO schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "HIREDATE": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/HIREDATE",
+                                "type": "string",
+                                "title": "The HIREDATE schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "JOB": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/JOB",
+                                "type": "string",
+                                "title": "The JOB schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "EDLEVEL": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/EDLEVEL",
+                                "type": "integer",
+                                "title": "The EDLEVEL schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "SEX": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/SEX",
+                                "type": "string",
+                                "title": "The SEX schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "BIRTHDATE": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/BIRTHDATE",
+                                "type": "string",
+                                "title": "The BIRTHDATE schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "SALARY": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/SALARY",
+                                "type": "integer",
+                                "title": "The SALARY schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "BONUS": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/BONUS",
+                                "type": "integer",
+                                "title": "The BONUS schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "COMM": {
+                                "id": "#/properties/Employee/items/anyOf/0/properties/COMM",
+                                "type": "integer",
+                                "title": "The COMM schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

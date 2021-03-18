@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:restapiDescriptor xmlns="http://com.ibm.etools.mft.descriptor.base" xmlns:ns2="http://com.ibm.etools.mft.descriptor.restapi" definitionType="swagger_20" definitionFile="HR_Employee_and_Department_Services.json" implementation="gen/HR_Service_ODBC.msgflow" https="false" definitionWithExtRef="false">
+    <references>
+        <sharedLibraryReference>
+            <libraryName>HRDB</libraryName>
+        </sharedLibraryReference>
+    </references>
+    <ns2:operations>
+        <ns2:operation name="createEmployee" implementation="createEmployee.subflow"/>
+        <ns2:operation name="deleteEmployees" implementation="deleteEmployees.subflow"/>
+        <ns2:operation name="getEmployee" implementation="getEmployee.subflow"/>
+        <ns2:operation name="getEmployees" implementation="getEmployees.subflow"/>
+        <ns2:operation name="predictSalary" implementation="predictSalary.subflow"/>
+        <ns2:operation name="putEmployees" implementation="putEmployees.subflow"/>
+    </ns2:operations>
+    <ns2:errorHandlers/>
+</ns2:restapiDescriptor>
